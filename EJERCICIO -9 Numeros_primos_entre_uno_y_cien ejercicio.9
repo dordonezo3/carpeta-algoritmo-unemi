@@ -1,0 +1,19 @@
+Algoritmo Numeros_primos_entre_uno_y_cien
+	//Defenir variables 
+	Definir A Como Entero
+	Definir num Como Entero
+	Definir Contador Como Entero
+	Para num = 1 Hasta 100  Hacer
+		A = 1;
+		Contador = 0;
+		Mientras A <= num Hacer
+			si num mod A == 0 Entonces
+				Contador = Contador +1;
+		FinSi
+		A = A + 1;
+	Fin Mientras
+	Si Contador = 2 Entonces
+		Escribir " El  número: ", num, " Es primo: ";
+	Fin Si
+	Fin Para
+FinAlgoritmo
